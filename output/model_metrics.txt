@@ -1,0 +1,40 @@
+RMSE: 126647.98
+MAE: 63563.69
+R-squared: 0.8728
+
+Model Formula:
+SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving + SqFtLot + BldgGrade + YrBuilt + HouseAge + WasRenovated + NbrLivingUnits + TrafficNoise + LandVal + ImpsVal + zhvi_px + zhvi_idx
+
+Model Summary:
+
+Call:
+lm(formula = model_formula, data = train)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2649045   -36168     5143    39334  3722375 
+
+Coefficients: (2 not defined because of singularities)
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    -7.548e+05  8.078e+04  -9.345  < 2e-16 ***
+Bedrooms       -6.875e+03  1.345e+03  -5.111 3.24e-07 ***
+Bathrooms       2.445e+03  2.134e+03   1.146  0.25196    
+SqFtTotLiving   3.264e+01  2.265e+00  14.413  < 2e-16 ***
+SqFtLot         3.860e-01  3.478e-02  11.097  < 2e-16 ***
+BldgGrade       4.851e+03  1.482e+03   3.273  0.00107 ** 
+YrBuilt         1.325e+02  4.205e+01   3.150  0.00164 ** 
+HouseAge               NA         NA      NA       NA    
+WasRenovated   -2.414e+04  4.445e+03  -5.430 5.71e-08 ***
+NbrLivingUnits  7.584e+03  5.939e+03   1.277  0.20159    
+TrafficNoise   -5.383e+02  1.690e+03  -0.318  0.75016    
+LandVal         9.516e-01  6.628e-03 143.578  < 2e-16 ***
+ImpsVal         7.253e-01  7.539e-03  96.208  < 2e-16 ***
+zhvi_px         1.215e+00  2.544e-02  47.743  < 2e-16 ***
+zhvi_idx               NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 124200 on 18136 degrees of freedom
+Multiple R-squared:  0.8728,	Adjusted R-squared:  0.8728 
+F-statistic: 1.037e+04 on 12 and 18136 DF,  p-value: < 2.2e-16
+
